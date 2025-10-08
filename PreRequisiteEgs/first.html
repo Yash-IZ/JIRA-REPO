@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript HelloWorld!</title>
+  <script>
+    window.onload = function () {
+      const input = document.createElement('input');
+      input.placeholder = 'Enter your name';
+      document.body.appendChild(input);
+
+      const button = document.createElement('button');
+      button.textContent = 'Submit';
+      document.body.appendChild(button);
+
+      const neemHeading = document.createElement('h1');
+      neemHeading.textContent = 'JavaScript is fun';
+      document.body.appendChild(neemHeading);
+
+      const output = document.createElement('h1');
+      document.body.appendChild(output);
+
+      button.onclick = () => {
+        const name = input.value.trim();
+        output.textContent = `${name}...`;
+      };
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>
